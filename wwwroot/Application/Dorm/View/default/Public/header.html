@@ -1,0 +1,58 @@
+
+<!--[if lt IE 8]>
+<div class="alert alert-danger" style="margin-bottom: 0">您正在使用 <strong>过时的</strong> 浏览器. 是时候 <a target="_blank"
+                                                                                                href="http://browsehappy.com/">更换一个更好的浏览器</a>
+    来提升用户体验.
+</div>
+<![endif]-->
+
+<!-- Header -->
+<div class="container">
+    <div class="header row">
+        <div class="span12">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h1>
+                        <a class="brand" href="{:U('Index/index')}">多木创艺</a>
+                    </h1>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="" id="index_tab">
+                                <a href="{:U('Index/index')}"><i class="icon-home"></i><br />主页</a>
+                            </li>
+                            <li id="design_tab">
+                                <a href="{:U('Index/design')}"><i class="icon-pencil"></i><br />多木设计</a>
+                            </li>
+                            <li id="vision_tab">
+                                <a href="{:U('Index/vision')}"><i class="icon-camera"></i><br />多木视觉</a>
+                            </li>
+                            <li id="goods_tab">
+                                <a href="{:U('Index/goods')}"><i class="icon-tasks"></i><br />多木优品</a>
+                            </li>
+
+<!--                             <li id="user_tab">
+                                <a href="{:U('Index/user')}"><i class="icon-user"></i><br />我</a>
+                            </li> -->
+                            
+                            <li id="about_tab">
+                                <a href="{:U('Index/about')}"><i class="icon-envelope-alt"></i><br />关于多木</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a id="goTopBtn"></a>
+<script>
+    $(function () {
+        $("#<php>echo strtolower(ACTION_NAME);</php>_tab").addClass(".current-page");
+    });
+
+</script>

@@ -1,0 +1,50 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="widget span3">
+                <h4>关于我们</h4>
+                <p>由重庆大学本科2013级和2014级来自4个学院的8名同学共同创建。“多木”是英文Dormitory的谐音。多木创艺围绕大学生寝室生活服务，旨在开发一种全新的寝室整合式服务平台，更全面、直接、快捷地为大学生提供多样的寝室及周边服务。</p>
+                <p><a href="{:U('Index/about')}">了解更多</a></p>
+            </div>
+            <div class="widget span3">
+                <h4>官方微博（多木创艺）</h4>
+                <div class="show-tweets">
+                    <img src="__DORM__/img/weibo.png" alt="" width="100" height="100">
+                </div>
+            </div>
+            <div class="widget span3">
+                <h4>官方微信（多木创艺）</h4>
+                <ul class="flickr-feed">
+                    <img src="__DORM__/img/wechat.jpg" alt="" width="100" height="100">
+                </ul>
+            </div>
+            <div class="widget span3">
+                <h4>联系我们</h4>
+                <p><i class="icon-map-marker"></i> 地址: 重庆市沙坪坝区重庆大学A区</p>
+                <p><i class="icon-phone"></i> 电话: 13340216649</p>
+                <p><i class="icon-user"></i> 联系人: 谢延敏 杨丹宁</p>
+                <p><i class="icon-envelope-alt"></i> 电子邮件: <a href="">dormcy@126.com</a></p>
+            </div>
+        </div>
+        <div class="footer-border"></div>
+        <div class="row">
+            <div class="copyright span4">
+                <p>Copyright 2015 多木创艺 - All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div>
+    {:C('COUNT_CODE')}
+</div>
+<include file="Public/js"/>
+
+<block name="script"><!-- 用于加载js代码 --></block>
+
+<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
+{:hook('pageFooter', 'widget')}
+<div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
+    <block name="hidden"></block>
+</div>

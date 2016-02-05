@@ -1,0 +1,145 @@
+<extend name="Base/common"/>
+<block name="body">
+
+        <!-- Page Title -->
+        <script type="text/javascript">
+       $(function(){
+            $('.weibo,.weixin').on('click',function(e){ 
+                // alert('what');
+                e.preventDefault();
+                var T = $(this);
+                T.next().css('height','130px');
+            });
+
+            $('.erweima').on('click',function(){ 
+               $(this).css('height',0);
+            })
+        });
+        </script>
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <i class="icon-envelope page-title-icon"></i>
+                        <h2>关于多木 </h2>
+                        <p>帮助你认识这个年轻的团队</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Text -->
+        <div class="about-us container">
+            <div class="row">
+                <div class="about-us-text span12">
+                    <h4>多木创艺</h4>
+                    <p>由重庆大学本科2013级和2014级来自4个学院的8名同学共同创建。<br>“多木”是英文Dormitory的谐音。多木创艺围绕大学生寝室生活服务，旨在开发一种全新的<span class="violet">寝室整合式服务平台</span>，更全面、直接、快捷地为大学生提供多样的<span class="violet">寝室及周边服务</span>。</p>
+                    <h4>我们的优势</h4>
+                    <p>多木产品，源自创意；多木服务，全方全位；多木团队，竭诚用心。<br>向往舒适便捷的寝室生活？我们为你提供多种创意产品。各式各样的寝室神器让你眼花缭乱？我们帮你整合。渴望温暖又个性的寝室环境？我们为你打造。<br>多木创艺，脚踏实地。我们有识才负责的领导者，才华横溢的设计者，聪颖机智的创造者，勤恳劳动的工作者。<br>线下多木，贴合学生生活，线上多木，平台更为广阔。<br><strong><span class="violet">多木，等你加入</span></strong>。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meet Our Team -->
+        <div class="team container">
+            <div class="team-title">
+                <h3>团队活宝们</h3>
+            </div>
+            <div class="row">
+                <div class="first_line">
+                    <div class="team-text span3">
+                        <img src="__DORM__/img/team/1.jpg" alt="">
+                        <h4>杨丹宁</h4>
+                        <p>重庆大学13级优异生<br> 财务规划、市场分析、营销管理</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/1.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/a.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                    <div class="team-text span3">
+                        <img src="__DORM__/img/team/2.jpg" alt="">
+                        <h4>谢延敏</h4>
+                        <p>重大电气摄影协会长<br>原型设计、前端开发、平面设计</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/2.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/b.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                    <div class="team-text span3">
+                        <img src="__DORM__/img/team/3.jpg" alt="">
+                        <h4>王钰莹</h4>
+                        <p>全国商业大赛优秀奖<br>财务规划、市场分析、营销管理</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/3.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/c.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                    <div class="team-text span3">
+                        <img src="__DORM__/img/team/4.jpg" alt="">
+                        <h4>周倍同</h4>
+                        <p>创新创业先进个人<br>thinkPHP后台开发</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/4.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/d.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second_line">
+                     <div class="team-text span3">
+                        <img src="__DORM__/img/team/5.jpg" alt="">
+                        <h4>王立</h4>
+                        <p>校级优秀学生干部<br>虎溪职通社生涯求职部副部长</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/5.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/e.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                    <div class="team-text span3">
+                        <img src="__DORM__/img/team/6.jpg" alt="">
+                        <h4>龚馨</h4>
+                        <p>重大电气辩论队员<br>组织协调，产品推广、文案撰写</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/6.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/f.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                    <div class="team-text span3">
+                        <img src="__DORM__/img/team/7.jpg" alt="">
+                        <h4>周燕</h4>
+                        <p>校报记者协会文学部部长<br>宣传策划、文案撰写</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img class="erweima_pic" src="__DORM__/img/erweima/7.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img src="__DORM__/img/erweima/g.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                    <div class="team-text span3">
+                        <img src="__DORM__/img/team/8.jpg" alt="">
+                        <h4>张鑫</h4>
+                        <p>重庆大学对外电商协会联合创始人兼外联部部长<br>营销推广、财务分析</p>
+                        <div class="social-links">
+                            <a class="weibo" href="javascript:void(0);"></a>
+                            <div class="erweima"><img src="__DORM__/img/erweima/8.jpg" class="weiboerweima"></div>
+                            <a class="weixin" href="javascript:void(0);"></a>
+                            <div class="erweima"><img src="__DORM__/img/erweima/h.jpg" class="weixinerweima"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonials -->
+   </block>
+

@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{:hook('syncMeta')}
+
+<include file="Public/seo"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<block name="style"><!--Style--></block>
+<!--合并前的js-->
+<include file="Public/var"/>
+
+<link rel="stylesheet" href="__DORM__/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="__DORM__/prettyPhoto/css/prettyPhoto.css">
+<link rel="stylesheet" href="__DORM__/css/flexslider.css">
+<link rel="stylesheet" href="__DORM__/css/font-awesome.css">
+<link rel="stylesheet" href="__DORM__/css/style.css">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicon and touch icons -->
+<link href="favicon.ico" rel="shortcut icon" type="image/ico">
+<link rel="shortcut icon" href="__DORM__/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="__DORM__/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="__DORM__/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="__DORM__/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="__DORM__/ico/apple-touch-icon-57-precomposed.png">
+
+
+<!-- Javascript -->
+<script src="__DORM__/js/jquery-1.8.2.min.js"></script>
+<script src="__DORM__/bootstrap/js/bootstrap.min.js"></script>
+<script src="__DORM__/js/jquery.flexslider.js"></script>
+<script src="__DORM__/js/jquery.tweet.js"></script>
+<script src="__DORM__/js/jflickrfeed.js"></script>
+
+<script src="__DORM__/js/jquery.ui.map.min.js"></script>
+<script src="__DORM__/js/jquery.quicksand.js"></script>
+<script src="__DORM__/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+<script src="__DORM__/js/scripts.js"></script>
+
+<script>
+    //全局内容的定义
+    var _ROOT_ = "__ROOT__";
+    var MID = "{:is_login()}";
+    var MODULE_NAME="<php>echo MODULE_NAME;</php>";
+    var ACTION_NAME="<php>echo ACTION_NAME;</php>";
+    var CONTROLLER_NAME ="<php>echo CONTROLLER_NAME;</php>";
+    var initNum = "{:modC('WEIBO_NUM',140,'WEIBO')}";
+    function adjust_navbar(){
+        $('#sub_nav').css('top',$('#nav_bar').height());
+        $('#main-container').css('padding-top',$('#nav_bar').height()+$('#sub_nav').height()+20)
+    }
+
+</script>
+
+<audio id="music" src="" autoplay="autoplay"></audio>
+<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
+{:hook('pageHeader')}

@@ -1,0 +1,88 @@
+    <extend name="Base/common"/>
+    <block name="body">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <i class="icon-pencil page-title-icon"></i>
+                        <h2>多木设计 </h2>
+                        <p>打造你专属的个性空间</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        
+
+        <div class="portfolio portfolio-page container">
+            <ul id="myTab" class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">打造模板</a></li>
+            <li><a href="#rule" role="tab" data-toggle="tab">个性定制</a></li>
+            <!-- <li><a href="#forum" role="tab" data-toggle="tab">订单查看</a></li> -->
+        </ul>
+        <!-- 选项卡面板 -->
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane active" id="bulletin"><div class="row">
+                <ul class="portfolio-img">
+                    <li data-id="p-1" data-type="web-design" class="span3">
+                        <div class="work">
+                            <a href="{:U('Index/buy_yd')}" rel="prettyPhoto">
+                                <img src="__DORM__/img/portfolio/work1.jpg" alt="">
+                            </a>
+                            <h4>运动</h4>
+                            <p>你热爱在阳光下挥洒汗水的你，是否也希望自己的寝室也充满活力<br>奔跑跳跃，休憩之中，感受运动乐趣！</p>
+                        </div>
+                    </li>
+                    <li data-id="p-2" data-type="logo-design" class="span3">
+                        <div class="work">
+                            <a href="{:U('Index/buy_dm')}" rel="prettyPhoto">
+                                <img src="__DORM__/img/portfolio/work2.jpg" alt="">
+                            </a>
+                            <h4>动漫</h4>
+                <p>还在二次元里做着安安静静的宅基腐吗？不想跨过次元障壁来次亲密接触吗？多木让你的本命出现在床头桌边，触手可及！</p>
+                        </div>
+                    </li>
+                    <li data-id="p-3" data-type="print-design" class="span3">
+                        <div class="work">
+                            <a href="{:U('Index/buy_yy')}" rel="prettyPhoto">
+                                <img src="__DORM__/img/portfolio/work3.jpg" alt="">
+                            </a>
+                            <h4>音乐</h4>
+                            <p>跃动的节奏，跃动的音符。无论你喜欢摇滚民谣流行古典还是普通disco，把寝室交给多木，我们为你打造专属的音乐空间。</p>
+                        </div>
+                    </li>
+                    <li data-id="p-4" data-type="web-design" class="span3">
+                        <div class="work">
+                            <a href="{:U('Index/buy_ys')}" rel="prettyPhoto">
+                                <img src="__DORM__/img/portfolio/work4.jpg" alt="">
+                            </a>
+                            <h4>影视</h4>
+                            <p>想要在寝室拥有美好的观影体验？想要动态的画面在你周围凝固成静态的美感？多木，为你编织舒适的光影。</p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div></div>
+            <div class="tab-pane" id="rule">
+                                <ul class="portfolio-img">
+                    <li data-id="p-1" data-type="web-design" class="span3">
+                        <div class="work">
+                            <a href="{:U('Index/buy_diy')}" rel="prettyPhoto">
+                                <img src="__DORM__/img/portfolio/diy_s.jpg" alt="">
+                            </a>
+                            <h4>个性定制</h4>
+                            <p>有很多异想天开、特立独行的想法？<br>我们来帮你实现！</p>
+                        </div>
+                    </li>                
+                </ul>
+            </div>
+        <!--     <div class="tab-pane" id="forum">论坛内容面板</div>
+            <div class="tab-pane" id="security">安全内容面板</div>
+            <div class="tab-pane" id="welfare">公益内容面板</div> -->
+        </div>
+            
+        </div>
+</block>

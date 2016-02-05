@@ -1,0 +1,91 @@
+<extend name="Base/common"/>
+<block name="body">
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <i class="icon-camera page-title-icon"></i>
+                        <h2>多木视觉 </h2>
+                        <p>设计专属你的寝室生活记录薄</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        
+
+        <div class="portfolio portfolio-page container">
+            <ul id="myTab" class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">照片接拍</a></li>
+            <li><a href="#rule" role="tab" data-toggle="tab">创意设计</a></li>
+
+<!--             <li><a href="#forum" role="tab" data-toggle="tab">订单查看</a></li>
+ -->            
+        </ul>
+        <!-- 选项卡面板 -->
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane active" id="bulletin">
+                <div class="row">
+                    <ul class="portfolio-img">
+                        <li data-id="p-1" data-type="web-design" class="span3">
+                            <div class="work">
+                                <a href="{:U('Index/buy_jtz')}" rel="prettyPhoto">
+                                <img src="__DORM__/img/vision/vision1.jpg">
+                                </a>
+                                <h4>集体照</h4>
+                                <p>厌倦了和兄弟闺蜜的无聊自拍，嫌low?<br>告别自拍模式，玩转创意集体照！</p>
+                            </div>
+                        </li>
+                        <li data-id="p-2" data-type="logo-design" class="span3">
+                            <div class="work">
+                                <a href="{:U('Index/buy_grxz')}" rel="prettyPhoto">
+                                    <img src="__DORM__/img/vision/vision2.jpg" alt="">
+                                </a>
+                                <h4>个人写真</h4>
+                                <p>时光荏苒，你的每时每刻，是否值得自己纪念？<br>你见证你的成长，多木为你打造青春纪念册。</p>
+                            </div>
+                        </li>
+                        <li data-id="p-3" data-type="print-design" class="span3">
+                            <div class="work">
+                                <a href="{:U('Index/buy_qlz')}" rel="prettyPhoto">
+                                    <img src="__DORM__/img/vision/vision3.jpg" alt="">
+                                </a>
+                                <h4>情侣照</h4>
+                                <p>手机里都是和TA的大头照，想换换口味？<br>定格幸福时光，“多木”给你不一样的feel。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="rule"><div class="row">
+                    <ul class="portfolio-img">
+                        <li data-id="p-1" data-type="web-design" class="span3">
+                            <div class="work">
+                                <a href="{:U('Index/buy_logosj')}" rel="prettyPhoto">
+                                <img src="__DORM__/img/vision/vision4.jpg">
+                                </a>
+                                <h4>LOGO设计</h4>
+                                <p>寝室风格随心定，专属logo在手。<br>设我为寝室代言，每时每刻！</p>
+                            </div>
+                        </li>
+                        <li data-id="p-2" data-type="logo-design" class="span3">
+                            <div class="work">
+                                <a href="{:U('Index/buy_whssj')}" rel="prettyPhoto">
+                                    <img src="__DORM__/img/vision/vision5.jpg" alt="">
+                                </a>
+                                <h4>文化衫设计（敬请期待）</h4>
+                                <p>曾经有校服和班服，想要“舍服”吗？<br>就是现在，DIY or 我们为您设计，由你决定！</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<!--             <div class="tab-pane" id="forum">论坛内容面板</div>
+            <div class="tab-pane" id="security">安全内容面板</div>
+            <div class="tab-pane" id="welfare">公益内容面板</div> -->
+        </div>
+            
+        </div>
+</block>
